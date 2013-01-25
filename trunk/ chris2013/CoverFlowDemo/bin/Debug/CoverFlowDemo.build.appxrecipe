@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>CAE08</Machine>
+    <WindowsUser>fdai3096</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\bin\Debug\CoverFlowDemo.exe">
+      <PackagePath>CoverFlowDemo.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\bin\Debug\CoverFlowDemo.pdb">
+      <PackagePath>CoverFlowDemo.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowControl\bin\Debug\CoverFlowControl.pdb">
+      <PackagePath>CoverFlowControl.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowControl\bin\Debug\CoverFlowControl.dll">
+      <PackagePath>CoverFlowControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\1.jpg">
+      <PackagePath>Pictures\1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\10.jpg">
+      <PackagePath>Pictures\10.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\11.jpg">
+      <PackagePath>Pictures\11.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\12.jpg">
+      <PackagePath>Pictures\12.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\13.jpg">
+      <PackagePath>Pictures\13.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\14.jpg">
+      <PackagePath>Pictures\14.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\16.jpg">
+      <PackagePath>Pictures\16.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\17.jpg">
+      <PackagePath>Pictures\17.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\18.jpg">
+      <PackagePath>Pictures\18.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\19.jpg">
+      <PackagePath>Pictures\19.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\2.jpg">
+      <PackagePath>Pictures\2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\20.jpg">
+      <PackagePath>Pictures\20.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\21.jpg">
+      <PackagePath>Pictures\21.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\3.jpg">
+      <PackagePath>Pictures\3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\4.jpg">
+      <PackagePath>Pictures\4.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\5.jpg">
+      <PackagePath>Pictures\5.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\6.jpg">
+      <PackagePath>Pictures\6.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\7.jpg">
+      <PackagePath>Pictures\7.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\8.jpg">
+      <PackagePath>Pictures\8.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\Pictures\9.jpg">
+      <PackagePath>Pictures\9.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowControl\bin\Debug\Themes\Generic.xaml">
+      <PackagePath>CoverFlowControl\Themes\Generic.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\fdai3096\Desktop\Coverflow\CoverFlowDemo\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -117,8 +117,6 @@ namespace CoverFlowControl.CoverFlowControl_XamlTypeInfo
 
         private object Activate_1_CoverFlowItem() { return new global::CoverFlowControl.CoverFlowItem(); }
 
-        private object Activate_2_CustomControl1() { return new global::CoverFlowControl.CustomControl1(); }
-
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(string typeName)
         {
@@ -153,10 +151,6 @@ namespace CoverFlowControl.CoverFlowControl_XamlTypeInfo
 
             case "Windows.UI.Xaml.Media.Animation.EasingFunctionBase":
                 xamlType = new global::CoverFlowControl.CoverFlowControl_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase));
-                break;
-
-            case "Windows.UI.Xaml.Controls.Control":
-                xamlType = new global::CoverFlowControl.CoverFlowControl_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.Control));
                 break;
 
             case "CoverFlowControl.CoverFlow":
@@ -205,12 +199,6 @@ namespace CoverFlowControl.CoverFlowControl_XamlTypeInfo
                 userType.AddMemberName("X");
                 AddToMapOfTypeToStandardName(typeof(global::System.Double),
                                                    "Double");
-                xamlType = userType;
-                break;
-
-            case "CoverFlowControl.CustomControl1":
-                userType = new global::CoverFlowControl.CoverFlowControl_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::CoverFlowControl.CustomControl1), GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_2_CustomControl1;
                 xamlType = userType;
                 break;
 

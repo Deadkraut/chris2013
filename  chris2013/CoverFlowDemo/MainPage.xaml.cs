@@ -27,10 +27,14 @@ namespace CoverFlowDemo
     public sealed partial class MainPage : Page
     {
 
-        private StorageFolder folder;      
+        private StorageFolder folder;
+        
         public MainPage()
         {
             this.InitializeComponent();
+
+
+
         }
 
         //Ordner wird nach Bildern durchsucht. Diese werden direkt in BitMapImages umgewandelt und dem Programm übergeben. Dateipfade funktionieren nicht.
@@ -58,6 +62,7 @@ namespace CoverFlowDemo
                     
             }
             CoverFlowControl.ItemsSource = comics;
+            //CoverFlowControl.SelectedCoverItem.Scale = 2.00;
         }
 
 
@@ -69,9 +74,13 @@ namespace CoverFlowDemo
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            var comics = new ObservableCollection<string>();
-            comics.Add("Assets/HSLogo.png");
-            CoverFlowControl.ItemsSource = comics;
+            getFolder();
         }
+
+        private void loadContent(object sender, RoutedEventArgs e)
+        {
+            getFolder();
+        }
+
     }
 }

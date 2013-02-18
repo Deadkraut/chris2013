@@ -405,8 +405,7 @@
         An AppBarButton Style is provided for each of the glyphs in the Segoe UI Symbol font.  
         Uncomment any style you reference (as not all may be required).
     -->
-
-    <!--
+    <!-- Hier werden die Schaltflächenstile  für das Projekt nutzbar gemacht in dem man sie wieder reinkommentiert --> 
     
     <Style x:Key="SkipBackAppBarButtonStyle" TargetType="ButtonBase" BasedOn="{StaticResource AppBarButtonStyle}">
         <Setter Property="AutomationProperties.AutomationId" Value="SkipBackAppBarButton"/>
@@ -518,8 +517,6 @@
         <Setter Property="AutomationProperties.Name" Value="Settings"/>
         <Setter Property="Content" Value="&#xE115;"/>
     </Style>
-    -->
-
     <!--
     <Style x:Key="VideoAppBarButtonStyle" TargetType="ButtonBase" BasedOn="{StaticResource AppBarButtonStyle}">
         <Setter Property="AutomationProperties.AutomationId" Value="VideoAppBarButton"/>

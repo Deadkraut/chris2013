@@ -16,7 +16,7 @@
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="PhotoApp.App">
       <VisualElements DisplayName="PhotoApp" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="PhotoApp" ForegroundText="light" BackgroundColor="#464646">
-        <DefaultTile ShowName="allLogos" />
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\LogoBig.jpg" />
         <SplashScreen Image="Assets\SplashScreen.png" />
       </VisualElements>
     </Application>

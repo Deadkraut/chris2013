@@ -116,6 +116,7 @@
   <ItemGroup>
     <Content Include="Assets\HS Logo.jpg" />
     <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\LogoBig.jpg" />
     <Content Include="Assets\SmallLogo.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\StoreLogo.png" />

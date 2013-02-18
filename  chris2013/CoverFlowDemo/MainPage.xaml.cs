@@ -57,10 +57,9 @@ namespace CoverFlowDemo
                     selectedPic.SetSource(myStream);
                     comics.Add(selectedPic);
                 }
-
-
+                CoverFlowControl.ItemsSource = comics;
             }
-            CoverFlowControl.ItemsSource = comics;
+            
         }
 
         async public void getFile()
@@ -75,17 +74,18 @@ namespace CoverFlowDemo
             openPicker.FileTypeFilter.Add(".jps");
 
             
-                IReadOnlyList<StorageFile> fileItems = await openPicker.PickMultipleFilesAsync();
+            IReadOnlyList<StorageFile> fileItems = await openPicker.PickMultipleFilesAsync();
+            if (fileItems.Count() > 0)
+            {
                 foreach (StorageFile file in fileItems)
                 {
-
                     Windows.Storage.Streams.IRandomAccessStreamWithContentType myStream = await file.OpenReadAsync();
                     var selectedPic = new BitmapImage();
                     selectedPic.SetSource(myStream);
                     comics.Add(selectedPic);
                 }
-
-            CoverFlowControl.ItemsSource = comics;
+                CoverFlowControl.ItemsSource = comics;
+            }
         }
 
         /// <summary>

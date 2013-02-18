@@ -1,3 +1,5 @@
+﻿
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -28,13 +30,9 @@ namespace CoverFlowDemo
     {
 
         private StorageFolder folder;
-        
         public MainPage()
         {
             this.InitializeComponent();
-
-
-
         }
 
         //Ordner wird nach Bildern durchsucht. Diese werden direkt in BitMapImages umgewandelt und dem Programm übergeben. Dateipfade funktionieren nicht.
@@ -52,17 +50,16 @@ namespace CoverFlowDemo
                 IReadOnlyList<StorageFile> fileItems = await folder.GetFilesAsync();
                 foreach (StorageFile file in fileItems)
                 {
-                    
+
                     Windows.Storage.Streams.IRandomAccessStreamWithContentType myStream = await file.OpenReadAsync();
                     var selectedPic = new BitmapImage();
                     selectedPic.SetSource(myStream);
                     comics.Add(selectedPic);
                 }
-                    
-                    
+
+
             }
             CoverFlowControl.ItemsSource = comics;
-            //CoverFlowControl.SelectedCoverItem.Scale = 2.00;
         }
 
 
@@ -72,15 +69,16 @@ namespace CoverFlowDemo
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.  The Parameter
         /// property is typically used to configure the page.</param>
+        /// 
+        private void loadContent(object sender, RoutedEventArgs e)
+	    {
+           
+	    }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            getFolder();
+            var comics = new ObservableCollection<string>();
+            comics.Add("Assets/HS Logo.jpg");
+            CoverFlowControl.ItemsSource = comics;
         }
-
-        private void loadContent(object sender, RoutedEventArgs e)
-        {
-            getFolder();
-        }
-
     }
 }

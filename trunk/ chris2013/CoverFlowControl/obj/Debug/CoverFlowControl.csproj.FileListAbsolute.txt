@@ -30,3 +30,21 @@ C:\Users\fdai3096\Desktop\Coverflow\CoverFlowControl\obj\Debug\layout.resfiles
 C:\Users\fdai3096\Desktop\Coverflow\CoverFlowControl\obj\Debug\resources.resfiles
 C:\Users\fdai3096\Desktop\Coverflow\CoverFlowControl\obj\Debug\pri.resfiles
 C:\Users\fdai3096\Desktop\Coverflow\CoverFlowControl\obj\Debug\LanguageQualifiers.txt
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\bin\Debug\CoverFlowControl.dll
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\bin\Debug\CoverFlowControl.pdb
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\bin\Debug\CoverFlowControl.pri
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\obj\Debug\Themes\Generic.g.i.cs
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\obj\Debug\Themes\Generic.g.cs
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\obj\Debug\Themes\Generic.xaml
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\obj\Debug\CoverFlowControl.dll
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\obj\Debug\CoverFlowControl.pdb
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\obj\Debug\priconfig.xml.intermediate
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\obj\Debug\layout.resfiles.intermediate
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\obj\Debug\resources.resfiles.intermediate
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\obj\Debug\pri.resfiles.intermediate
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\obj\Debug\priconfig.xml
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\obj\Debug\layout.resfiles
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\obj\Debug\resources.resfiles
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\obj\Debug\pri.resfiles
+C:\Users\fdai3842\Desktop\chris2013\ chris2013\CoverFlowControl\obj\Debug\LanguageQualifiers.txt

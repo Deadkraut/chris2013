@@ -12,9 +12,10 @@
         <AppBar x:Name="bottomAppBar" Padding="10,0,10,0">
             <Grid>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Button Style="{StaticResource PlayAppBarButtonStyle}"  AutomationProperties.Name="Diaschow" Click="startDiashow" />
                     <Button Style="{StaticResource EditAppBarButtonStyle}" AutomationProperties.Name="Ordner Hinzufügen" Click="loadContent" />
                     <Button Style="{StaticResource EditAppBarButtonStyle}" AutomationProperties.Name=" Bilder Hinzufügen" Click="loadPhoto"/>
-                    <Button Style="{StaticResource RemoveAppBarButtonStyle}" AutomationProperties.Name="Löschen"/>
+                    <Button Style="{StaticResource RemoveAppBarButtonStyle}" AutomationProperties.Name="Zurücksetzen" Click="deleteContent"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 </StackPanel>

@@ -1,4 +1,6 @@
-﻿
+﻿/*
+ Help: http://stackoverflow.com/questions/12641223/thread-sleep-replacement-in-net-for-windows-store
+ */
 
 ﻿using System;
 using System.Collections.Generic;
@@ -104,10 +106,37 @@ namespace CoverFlowDemo
             comics.Add("Assets/HS Logo.jpg");
             CoverFlowControl.ItemsSource = comics;
         }
+
         private void loadPhoto(object sender, RoutedEventArgs e)
         {
             getFile();
         }
 
+        private void deleteContent(object sender, RoutedEventArgs e)
+        {
+            var comics = new ObservableCollection<string>();
+            comics.Add("Assets/HS Logo.jpg");
+            CoverFlowControl.ItemsSource = comics;
+        }
+
+
+        // This is the Methode for the Diashow
+        async private void startDiashow(object sender, RoutedEventArgs e)
+        {
+           
+
+            int items = CoverFlowControl.Items.Count()-1;
+            for (int i = 0; i <= items; i++)
+            {
+                DateTime start = DateTime.Now;
+                await System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(2)); // Do something after 2 Seconds
+                DateTime end = DateTime.Now;
+                if (end.Subtract(start).Seconds == 2)
+                {
+                    CoverFlowControl.NextItem();
+                }
+
+            }   
+        }
     }
 }

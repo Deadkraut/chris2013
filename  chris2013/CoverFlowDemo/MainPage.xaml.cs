@@ -44,6 +44,7 @@ namespace CoverFlowDemo
             folderPicker.FileTypeFilter.Add(".jpg");
             folderPicker.FileTypeFilter.Add(".jpeg");
             folderPicker.FileTypeFilter.Add(".png");
+            folderPicker.FileTypeFilter.Add(".jps");
             folder = await folderPicker.PickSingleFolderAsync();
             if (folder != null)
             {
@@ -62,7 +63,30 @@ namespace CoverFlowDemo
             CoverFlowControl.ItemsSource = comics;
         }
 
+        async public void getFile()
+        {
+            var comics = new ObservableCollection<BitmapImage>();
+            FileOpenPicker openPicker = new FileOpenPicker();
+            openPicker.ViewMode = PickerViewMode.Thumbnail;
+            openPicker.SuggestedStartLocation = PickerLocationId.PicturesLibrary;
+            openPicker.FileTypeFilter.Add(".jpg");
+            openPicker.FileTypeFilter.Add(".jpeg");
+            openPicker.FileTypeFilter.Add(".png");
+            openPicker.FileTypeFilter.Add(".jps");
 
+            
+                IReadOnlyList<StorageFile> fileItems = await openPicker.PickMultipleFilesAsync();
+                foreach (StorageFile file in fileItems)
+                {
+
+                    Windows.Storage.Streams.IRandomAccessStreamWithContentType myStream = await file.OpenReadAsync();
+                    var selectedPic = new BitmapImage();
+                    selectedPic.SetSource(myStream);
+                    comics.Add(selectedPic);
+                }
+
+            CoverFlowControl.ItemsSource = comics;
+        }
 
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
@@ -72,7 +96,7 @@ namespace CoverFlowDemo
         /// 
         private void loadContent(object sender, RoutedEventArgs e)
 	    {
-           
+            getFolder();
 	    }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -80,5 +104,10 @@ namespace CoverFlowDemo
             comics.Add("Assets/HS Logo.jpg");
             CoverFlowControl.ItemsSource = comics;
         }
+        private void loadPhoto(object sender, RoutedEventArgs e)
+        {
+            getFile();
+        }
+
     }
 }

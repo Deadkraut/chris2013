@@ -13,13 +13,13 @@ namespace CoverFlowDemo
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-        private global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        private global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlTypeInfoProvider _provider;
 
         public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
         {
             if(_provider == null)
             {
-                _provider = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByType(type);
         }
@@ -28,7 +28,7 @@ namespace CoverFlowDemo
         {
             if(_provider == null)
             {
-                _provider = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByName(fullName);
         }
@@ -40,7 +40,7 @@ namespace CoverFlowDemo
     }
 }
 
-namespace CoverFlowDemo.CoverFlowDemo_XamlTypeInfo
+namespace CoverFlowDemo.PhotoApp_XamlTypeInfo
 {
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
@@ -129,49 +129,49 @@ namespace CoverFlowDemo.CoverFlowDemo_XamlTypeInfo
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(string typeName)
         {
-            global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlSystemBaseType xamlType = null;
-            global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType userType;
+            global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlSystemBaseType xamlType = null;
+            global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType userType;
 
             switch (typeName)
             {
             case "Windows.UI.Xaml.Controls.ItemsControl":
-                xamlType = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.ItemsControl));
+                xamlType = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.ItemsControl));
                 break;
 
             case "Int32":
-                xamlType = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.Int32));
+                xamlType = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.Int32));
                 break;
 
             case "Object":
-                xamlType = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.Object));
+                xamlType = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.Object));
                 break;
 
             case "Windows.UI.Xaml.Controls.ContentControl":
-                xamlType = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.ContentControl));
+                xamlType = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.ContentControl));
                 break;
 
             case "Double":
-                xamlType = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.Double));
+                xamlType = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.Double));
                 break;
 
             case "Windows.UI.Xaml.Duration":
-                xamlType = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Duration));
+                xamlType = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Duration));
                 break;
 
             case "Windows.UI.Xaml.Media.Animation.EasingFunctionBase":
-                xamlType = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase));
+                xamlType = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase));
                 break;
 
             case "Windows.UI.Xaml.Controls.Page":
-                xamlType = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.Page));
+                xamlType = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.Page));
                 break;
 
             case "Windows.UI.Xaml.Controls.UserControl":
-                xamlType = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.UserControl));
+                xamlType = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.UserControl));
                 break;
 
             case "CoverFlowControl.CoverFlow":
-                userType = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::CoverFlowControl.CoverFlow), GetXamlTypeByName("Windows.UI.Xaml.Controls.ItemsControl"));
+                userType = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::CoverFlowControl.CoverFlow), GetXamlTypeByName("Windows.UI.Xaml.Controls.ItemsControl"));
                 userType.Activator = Activate_0_CoverFlow;
                 userType.AddMemberName("SelectedIndex");
                 AddToMapOfTypeToStandardName(typeof(global::System.Int32),
@@ -202,13 +202,13 @@ namespace CoverFlowDemo.CoverFlowDemo_XamlTypeInfo
                 break;
 
             case "CoverFlowControl.CoverFlowItem":
-                userType = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::CoverFlowControl.CoverFlowItem), GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
+                userType = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::CoverFlowControl.CoverFlowItem), GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
                 userType.Activator = Activate_1_CoverFlowItem;
                 xamlType = userType;
                 break;
 
             case "CoverFlowDemo.MainPage":
-                userType = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::CoverFlowDemo.MainPage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::CoverFlowDemo.MainPage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_2_MainPage;
                 xamlType = userType;
                 break;
@@ -374,81 +374,81 @@ namespace CoverFlowDemo.CoverFlowDemo_XamlTypeInfo
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
-            global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlMember xamlMember = null;
-            global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType userType;
+            global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlMember xamlMember = null;
+            global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType userType;
 
             switch (longMemberName)
             {
             case "CoverFlowControl.CoverFlow.SelectedIndex":
-                userType = (global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
+                userType = (global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
+                xamlMember = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
                 xamlMember.Getter = get_0_CoverFlow_SelectedIndex;
                 xamlMember.Setter = set_0_CoverFlow_SelectedIndex;
                 break;
             case "CoverFlowControl.CoverFlow.SelectedItem":
-                userType = (global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
+                userType = (global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
+                xamlMember = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
                 xamlMember.Getter = get_1_CoverFlow_SelectedItem;
                 xamlMember.Setter = set_1_CoverFlow_SelectedItem;
                 break;
             case "CoverFlowControl.CoverFlow.SelectedCoverItem":
-                userType = (global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlMember(this, "SelectedCoverItem", "CoverFlowControl.CoverFlowItem");
+                userType = (global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
+                xamlMember = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlMember(this, "SelectedCoverItem", "CoverFlowControl.CoverFlowItem");
                 xamlMember.Getter = get_2_CoverFlow_SelectedCoverItem;
                 xamlMember.Setter = set_2_CoverFlow_SelectedCoverItem;
                 break;
             case "CoverFlowControl.CoverFlow.SpaceBetweenItems":
-                userType = (global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlMember(this, "SpaceBetweenItems", "Double");
+                userType = (global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
+                xamlMember = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlMember(this, "SpaceBetweenItems", "Double");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_3_CoverFlow_SpaceBetweenItems;
                 xamlMember.Setter = set_3_CoverFlow_SpaceBetweenItems;
                 break;
             case "CoverFlowControl.CoverFlow.SpaceBetweenSelectedItemAndItems":
-                userType = (global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlMember(this, "SpaceBetweenSelectedItemAndItems", "Double");
+                userType = (global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
+                xamlMember = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlMember(this, "SpaceBetweenSelectedItemAndItems", "Double");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_4_CoverFlow_SpaceBetweenSelectedItemAndItems;
                 xamlMember.Setter = set_4_CoverFlow_SpaceBetweenSelectedItemAndItems;
                 break;
             case "CoverFlowControl.CoverFlow.RotationAngle":
-                userType = (global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlMember(this, "RotationAngle", "Double");
+                userType = (global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
+                xamlMember = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlMember(this, "RotationAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_5_CoverFlow_RotationAngle;
                 xamlMember.Setter = set_5_CoverFlow_RotationAngle;
                 break;
             case "CoverFlowControl.CoverFlow.ZDistance":
-                userType = (global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlMember(this, "ZDistance", "Double");
+                userType = (global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
+                xamlMember = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlMember(this, "ZDistance", "Double");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_6_CoverFlow_ZDistance;
                 xamlMember.Setter = set_6_CoverFlow_ZDistance;
                 break;
             case "CoverFlowControl.CoverFlow.Scale":
-                userType = (global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlMember(this, "Scale", "Double");
+                userType = (global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
+                xamlMember = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlMember(this, "Scale", "Double");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_7_CoverFlow_Scale;
                 xamlMember.Setter = set_7_CoverFlow_Scale;
                 break;
             case "CoverFlowControl.CoverFlow.SingleItemDuration":
-                userType = (global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlMember(this, "SingleItemDuration", "Windows.UI.Xaml.Duration");
+                userType = (global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
+                xamlMember = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlMember(this, "SingleItemDuration", "Windows.UI.Xaml.Duration");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_8_CoverFlow_SingleItemDuration;
                 xamlMember.Setter = set_8_CoverFlow_SingleItemDuration;
                 break;
             case "CoverFlowControl.CoverFlow.PageDuration":
-                userType = (global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlMember(this, "PageDuration", "Windows.UI.Xaml.Duration");
+                userType = (global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
+                xamlMember = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlMember(this, "PageDuration", "Windows.UI.Xaml.Duration");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_9_CoverFlow_PageDuration;
                 xamlMember.Setter = set_9_CoverFlow_PageDuration;
                 break;
             case "CoverFlowControl.CoverFlow.EasingFunction":
-                userType = (global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlMember(this, "EasingFunction", "Windows.UI.Xaml.Media.Animation.EasingFunctionBase");
+                userType = (global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
+                xamlMember = new global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlMember(this, "EasingFunction", "Windows.UI.Xaml.Media.Animation.EasingFunctionBase");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_10_CoverFlow_EasingFunction;
                 xamlMember.Setter = set_10_CoverFlow_EasingFunction;
@@ -508,9 +508,9 @@ namespace CoverFlowDemo.CoverFlowDemo_XamlTypeInfo
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class XamlUserType : global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlSystemBaseType
+    internal class XamlUserType : global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlSystemBaseType
     {
-        global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlTypeInfoProvider _provider;
         global::Windows.UI.Xaml.Markup.IXamlType _baseType;
         bool _isArray;
         bool _isMarkupExtension;
@@ -522,7 +522,7 @@ namespace CoverFlowDemo.CoverFlowDemo_XamlTypeInfo
         global::System.Collections.Generic.Dictionary<string, string> _memberNames;
         global::System.Collections.Generic.Dictionary<string, object> _enumValues;
 
-        public XamlUserType(global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
+        public XamlUserType(global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
             :base(fullName, fullType)
         {
             _provider = provider;
@@ -703,7 +703,7 @@ namespace CoverFlowDemo.CoverFlowDemo_XamlTypeInfo
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
-        global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlTypeInfoProvider _provider;
         string _name;
         bool _isAttachable;
         bool _isDependencyProperty;
@@ -712,7 +712,7 @@ namespace CoverFlowDemo.CoverFlowDemo_XamlTypeInfo
         string _typeName;
         string _targetTypeName;
 
-        public XamlMember(global::CoverFlowDemo.CoverFlowDemo_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
+        public XamlMember(global::CoverFlowDemo.PhotoApp_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
         {
             _name = name;
             _typeName = typeName;

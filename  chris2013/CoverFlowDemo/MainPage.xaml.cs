@@ -32,6 +32,7 @@ namespace CoverFlowDemo
     {
 
         private StorageFolder folder;
+        private Boolean pause;
         public MainPage()
         {
             this.InitializeComponent();
@@ -123,20 +124,27 @@ namespace CoverFlowDemo
         // This is the Methode for the Diashow
         async private void startDiashow(object sender, RoutedEventArgs e)
         {
-           
-
+            pause = false;
             int items = CoverFlowControl.Items.Count()-1;
             for (int i = 0; i <= items; i++)
             {
-                DateTime start = DateTime.Now;
-                await System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(2)); // Do something after 2 Seconds
-                DateTime end = DateTime.Now;
-                if (end.Subtract(start).Seconds == 2)
+                if (pause == false)
                 {
-                    CoverFlowControl.NextItem();
+                    DateTime start = DateTime.Now;
+                    await System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(2)); // Do something after 2 Seconds
+                    DateTime end = DateTime.Now;
+                    if (end.Subtract(start).Seconds == 2 && pause == false)
+                    {
+                        CoverFlowControl.NextItem();
+                    }
                 }
 
             }   
+        }
+
+        private void pauseDiashow(object sender, RoutedEventArgs e)
+        {
+            pause = true;
         }
     }
 }

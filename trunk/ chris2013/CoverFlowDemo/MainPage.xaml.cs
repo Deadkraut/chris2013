@@ -20,6 +20,7 @@ using Windows.UI.Xaml.Navigation;
 using Windows.Storage.Pickers;
 using Windows.Storage;
 using Windows.UI.Popups;
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace CoverFlowDemo
@@ -147,6 +148,12 @@ namespace CoverFlowDemo
             pause = true;
         }
 
+
+        private void rotatePhoto(object sender, RoutedEventArgs e)
+        {
+            var picture = CoverFlowControl.SelectedCoverItem;
+
+        }
         //Aktuelles Bild Vergrößern.
         private void zoomIn(object sender, RoutedEventArgs e)
         {

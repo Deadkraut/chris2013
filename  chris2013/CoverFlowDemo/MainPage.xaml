@@ -15,7 +15,9 @@
                     <Button Style="{StaticResource PlayAppBarButtonStyle}"  AutomationProperties.Name="Diaschow" Click="startDiashow" />
                     <Button Style="{StaticResource PauseAppBarButtonStyle}"  AutomationProperties.Name=" Pause der Diaschow" Click="pauseDiashow" />
                     <Button Style="{StaticResource EditAppBarButtonStyle}" AutomationProperties.Name="Ordner Hinzufügen" Click="loadContent" />
-                    <Button Style="{StaticResource EditAppBarButtonStyle}" AutomationProperties.Name=" Bilder Hinzufügen" Click="loadPhoto"/>
+                    <Button Style="{StaticResource EditAppBarButtonStyle}" AutomationProperties.Name=" Bilder Hinzufügen" Click="loadPhoto"/>                
+                    <Button Style="{StaticResource ZoomAppBarButtonStyle}" AutomationProperties.Name="Vergößern" Click="zoomIn"/>
+                    <Button Style="{StaticResource ZoomOutAppBarButtonStyle}" AutomationProperties.Name="Verkleinern" Click="zoomOut"/>
                     <Button Style="{StaticResource RemoveAppBarButtonStyle}" AutomationProperties.Name="Zurücksetzen" Click="deleteContent"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">

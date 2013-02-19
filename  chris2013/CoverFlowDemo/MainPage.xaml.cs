@@ -146,5 +146,21 @@ namespace CoverFlowDemo
         {
             pause = true;
         }
+
+        //Aktuelles Bild Vergrößern.
+        private void zoomIn(object sender, RoutedEventArgs e)
+        {
+            CoverFlowControl.SelectedCoverItem.Scale += 0.5;
+        }
+
+        //Aktuelles Bild verkleinern, ohne über die optimale Größe zu gehen.
+        private void zoomOut(object sender, RoutedEventArgs e)
+        {
+            //var msg = new MessageDialog(CoverFlowControl.SelectedCoverItem.Scale.ToString());
+            //msg.ShowAsync();
+            
+            if(CoverFlowControl.SelectedCoverItem.Scale > 1)
+                CoverFlowControl.SelectedCoverItem.Scale -= 0.5;
+        }
     }
 }

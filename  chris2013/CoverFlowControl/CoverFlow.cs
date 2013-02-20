@@ -39,7 +39,7 @@ namespace CoverFlowControl
         private Dictionary<object, CoverFlowItem> _objectToItemContainer;
         private List<CoverFlowItem> items;
 
-        private const double _threshold = 80.0; // Higher values == lower sensitivity
+        private const double _threshold = 100.0; // Higher values == lower sensitivity
         private double _distance = 0.0;
         private bool _begin = true;
 
@@ -426,6 +426,7 @@ namespace CoverFlowControl
         {
             if (SelectedIndex < items.Count - 1)
             {
+                items[SelectedIndex].ZRotation = 0;
                 duration = SingleItemDuration;
                 SelectedIndex++;
             }
@@ -434,6 +435,7 @@ namespace CoverFlowControl
         {
             if (SelectedIndex > 0)
             {
+                items[SelectedIndex].ZRotation = 0;
                 duration = SingleItemDuration;
                 SelectedIndex--;
             }

@@ -49,6 +49,24 @@ namespace CoverFlowControl
             }
         }
 
+        //Rotieren um Z Achse eingefügt.
+        private double zRotation;
+        public double ZRotation
+        {
+            get
+            {
+                return zRotation;
+            }
+            set
+            {
+                zRotation = value;
+                if (planeProjection != null)
+                {
+                    planeProjection.RotationZ = value;
+                }
+            }
+        }
+
         private double zOffset;
         public double ZOffset
         {
@@ -115,6 +133,7 @@ namespace CoverFlowControl
             scaleTransform = (ScaleTransform)GetTemplateChild("scaleTransform");
 
             planeProjection.RotationY = yRotation;
+            planeProjection.RotationZ = zRotation;
             planeProjection.LocalOffsetZ = zOffset;
 
             if (ContentPresenter != null)

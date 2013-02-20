@@ -209,5 +209,15 @@ namespace CoverFlowDemo
             }
         }
 
+        private void rotateRight(object sender, RoutedEventArgs e)
+        {
+            CoverFlowControl.SelectedCoverItem.ZRotation -= 90;
+        }
+
+        private void rotateLeft(object sender, RoutedEventArgs e)
+        {
+            CoverFlowControl.SelectedCoverItem.ZRotation += 90;
+        }
+
     }
 }

@@ -20,6 +20,7 @@ using Windows.UI.Xaml.Navigation;
 using Windows.Storage.Pickers;
 using Windows.Storage;
 using Windows.UI.Popups;
+using System.Diagnostics;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -34,6 +35,7 @@ namespace CoverFlowDemo
 
         private StorageFolder folder;
         private Boolean pause;
+        private Boolean holding;
         public MainPage()
         {
             this.InitializeComponent();
@@ -127,15 +129,17 @@ namespace CoverFlowDemo
         {
             pause = false;
             int items = CoverFlowControl.Items.Count()-1;
+            Debug.WriteLine("Dia");
             for (int i = 0; i <= items; i++)
             {
                 if (pause == false)
                 {
                     DateTime start = DateTime.Now;
-                    await System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(2)); // Do something after 2 Seconds
+                    await System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(5)); // Do something after 2 Seconds
                     DateTime end = DateTime.Now;
-                    if (end.Subtract(start).Seconds == 2 && pause == false)
+                    if (end.Subtract(start).Seconds == 5 && pause == false) // At this Place we need the same Nummber as in the Threads
                     {
+                        Debug.WriteLine("Pause = false");
                         CoverFlowControl.NextItem();
                     }
                 }
@@ -148,12 +152,6 @@ namespace CoverFlowDemo
             pause = true;
         }
 
-
-        private void rotatePhoto(object sender, RoutedEventArgs e)
-        {
-            var picture = CoverFlowControl.SelectedCoverItem;
-
-        }
         //Aktuelles Bild Vergrößern.
         private void zoomIn(object sender, RoutedEventArgs e)
         {
@@ -181,6 +179,30 @@ namespace CoverFlowDemo
                 {
                     Rect = new Windows.Foundation.Rect(0, 0, canvas.ActualWidth, canvas.ActualHeight)
                 };
+            }
+        }
+
+        //This Events are for the Fingerpressed Event
+        
+        private void ImagePointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            Debug.WriteLine("Pressed");
+            holding = true;
+            
+        }
+
+        private void ImagePointerReleased(object sender, PointerRoutedEventArgs e)
+        {
+            Debug.WriteLine("Released");
+            holding = false;
+        }
+        
+        private void GridPointerMoved(object sender, PointerRoutedEventArgs e)
+        {
+            if (holding)
+            {
+                pause = true;
+                Debug.WriteLine("pause = true");
             }
         }
 

@@ -166,22 +166,25 @@ namespace CoverFlowDemo
             
             if(CoverFlowControl.SelectedCoverItem.Scale > 1)
                 CoverFlowControl.SelectedCoverItem.Scale -= 0.5;
+
+            if(CoverFlowControl.SelectedCoverItem.Scale < 1)
+                CoverFlowControl.SelectedCoverItem.Scale = 1.0;
+
         }
 
-        private void OnSizeChanged(object sender, Windows.UI.Xaml.SizeChangedEventArgs e)
+        //Funktion für Drehen und Zoomen mit Fingern.
+       private void Image_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
         {
-            var canvas = sender as Windows.UI.Xaml.Controls.Canvas;
-
-            // If resized object is a canvas, update clipping geometry to its new size.
-            if (canvas != null)
+            var image = sender as Windows.UI.Xaml.Controls.Image;
+            if (image != null)
             {
-                canvas.Clip = new Windows.UI.Xaml.Media.RectangleGeometry
-                {
-                    Rect = new Windows.Foundation.Rect(0, 0, canvas.ActualWidth, canvas.ActualHeight)
-                };
+                Double scale = CoverFlowControl.SelectedCoverItem.Scale * e.Delta.Scale;
+                if (scale >= 1.0)
+                    CoverFlowControl.SelectedCoverItem.Scale = scale;
+
+                CoverFlowControl.SelectedCoverItem.ZRotation += e.Delta.Rotation;
             }
         }
-
         //This Events are for the Fingerpressed Event
         
         private void ImagePointerPressed(object sender, PointerRoutedEventArgs e)

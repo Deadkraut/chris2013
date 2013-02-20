@@ -18,7 +18,8 @@
                     <Button Style="{StaticResource EditAppBarButtonStyle}" AutomationProperties.Name=" Bilder Hinzufügen" Click="loadPhoto"/>                
                     <Button Style="{StaticResource ZoomAppBarButtonStyle}" AutomationProperties.Name="Vergößern" Click="zoomIn"/>
                     <Button Style="{StaticResource ZoomOutAppBarButtonStyle}" AutomationProperties.Name="Verkleinern" Click="zoomOut"/>
-                    <Button Style="{StaticResource RotateAppBarButtonStyle}" AutomationProperties.Name="Rotieren" />
+                    <Button Style="{StaticResource RotateAppBarButtonStyle}" AutomationProperties.Name="Links Rotieren" Click="rotateLeft" />
+                    <Button Style="{StaticResource RotateAppBarButtonStyle}" AutomationProperties.Name="Rechts Rotieren" Click="rotateRight" />
                     <Button Style="{StaticResource RemoveAppBarButtonStyle}" AutomationProperties.Name="Zurücksetzen" Click="deleteContent"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">

@@ -4,6 +4,6 @@
     <RemoteDebugMachine>Jeff-Surface</RemoteDebugMachine>
     <UseAuthentication>True</UseAuthentication>
     <RemoteDebugEnabled>false</RemoteDebugEnabled>
-    <UseSimulator>False</UseSimulator>
+    <UseSimulator>True</UseSimulator>
   </PropertyGroup>
 </Project>

@@ -32,7 +32,7 @@
         <controls:CoverFlow x:Name="CoverFlowControl">
             <controls:CoverFlow.ItemTemplate>
                 <DataTemplate>
-                    <Image Source="{Binding}" Height="1200"/>
+                    <Image Source="{Binding}" Height="1200" Holding="pauseDiashow" SizeChanged="OnSizeChanged"/>
                 </DataTemplate>
             </controls:CoverFlow.ItemTemplate>
         </controls:CoverFlow>

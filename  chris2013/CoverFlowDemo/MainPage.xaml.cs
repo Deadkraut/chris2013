@@ -169,5 +169,20 @@ namespace CoverFlowDemo
             if(CoverFlowControl.SelectedCoverItem.Scale > 1)
                 CoverFlowControl.SelectedCoverItem.Scale -= 0.5;
         }
+
+        private void OnSizeChanged(object sender, Windows.UI.Xaml.SizeChangedEventArgs e)
+        {
+            var canvas = sender as Windows.UI.Xaml.Controls.Canvas;
+
+            // If resized object is a canvas, update clipping geometry to its new size.
+            if (canvas != null)
+            {
+                canvas.Clip = new Windows.UI.Xaml.Media.RectangleGeometry
+                {
+                    Rect = new Windows.Foundation.Rect(0, 0, canvas.ActualWidth, canvas.ActualHeight)
+                };
+            }
+        }
+
     }
 }

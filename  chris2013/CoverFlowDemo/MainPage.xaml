@@ -18,7 +18,7 @@
                     <Button Style="{StaticResource EditAppBarButtonStyle}" AutomationProperties.Name=" Bilder Hinzufügen" Click="loadPhoto"/>                
                     <Button Style="{StaticResource ZoomAppBarButtonStyle}" AutomationProperties.Name="Vergößern" Click="zoomIn"/>
                     <Button Style="{StaticResource ZoomOutAppBarButtonStyle}" AutomationProperties.Name="Verkleinern" Click="zoomOut"/>
-                    <Button Style="{StaticResource RotateAppBarButtonStyle}" AutomationProperties.Name="Rotieren" Click="rotatePhoto"/>
+                    <Button Style="{StaticResource RotateAppBarButtonStyle}" AutomationProperties.Name="Rotieren" />
                     <Button Style="{StaticResource RemoveAppBarButtonStyle}" AutomationProperties.Name="Zurücksetzen" Click="deleteContent"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
@@ -28,11 +28,11 @@
     </Page.BottomAppBar>
 
 
-    <Grid Background="DarkGray">
-        <controls:CoverFlow x:Name="CoverFlowControl">
+    <Grid Background="DarkGray" PointerMoved="GridPointerMoved">
+        <controls:CoverFlow x:Name="CoverFlowControl" >
             <controls:CoverFlow.ItemTemplate>
                 <DataTemplate>
-                    <Image Source="{Binding}" Height="1200" Holding="pauseDiashow" SizeChanged="OnSizeChanged"/>
+                    <Image x:Name="image1" Source="{Binding}" Height="1200" SizeChanged="OnSizeChanged" PointerPressed="ImagePointerPressed" PointerReleased="ImagePointerReleased" />
                 </DataTemplate>
             </controls:CoverFlow.ItemTemplate>
         </controls:CoverFlow>

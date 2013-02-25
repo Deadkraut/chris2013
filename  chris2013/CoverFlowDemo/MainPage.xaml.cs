@@ -21,6 +21,11 @@ using Windows.Storage.Pickers;
 using Windows.Storage;
 using Windows.UI.Popups;
 using System.Diagnostics;
+//Ist für die Tastatur
+using Windows.UI.Core;
+using Windows.System;
+//Wird für die Nutzung der Maus benötigt
+using Windows.Devices.Input;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -38,8 +43,43 @@ namespace CoverFlowDemo
         private Boolean holding;
         public MainPage()
         {
+            CoreWindow.GetForCurrentThread().KeyDown += MainPage_KeyDown; // Wird benötigt damit die Tasten in der App gegen und runter gedrückt sind
             this.InitializeComponent();
         }
+
+        private void MainPage_KeyDown(CoreWindow sender, KeyEventArgs args)
+        {
+            if (args.VirtualKey.Equals(VirtualKey.P) || args.VirtualKey.Equals(VirtualKey.Pause))
+            {
+                if (pause)
+                    pause = true;
+                else
+                    pause = false;
+            }
+            if (args.VirtualKey.Equals(VirtualKey.Left)) //Bewegt die Bilder nach Links
+            {
+                CoverFlowControl.PreviousItem();
+            }
+            if (args.VirtualKey.Equals(VirtualKey.Right)) //Bewegt die Bilder nach Rechts
+            {
+                CoverFlowControl.NextItem();
+            }
+
+            if (args.VirtualKey.Equals(VirtualKey.R)) //Rotiert nach Rechts
+            {
+                
+                CoverFlowControl.SelectedCoverItem.ZRotation -= 90;
+            }
+            if (args.VirtualKey.Equals(VirtualKey.L)) //Rotiert nach Rechts
+            {
+
+                CoverFlowControl.SelectedCoverItem.ZRotation += 90;
+            }
+
+
+        }
+
+
 
         //Ordner wird nach Bildern durchsucht. Diese werden direkt in BitMapImages umgewandelt und dem Programm übergeben. Dateipfade funktionieren nicht.
         async public void getFolder()
@@ -125,11 +165,15 @@ namespace CoverFlowDemo
 
 
         // This is the Methode for the Diashow
-        async private void startDiashow(object sender, RoutedEventArgs e)
+        private void startDiashow(object sender, RoutedEventArgs e)
+        {
+            startDiashow();
+        }
+
+        async private void startDiashow()
         {
             pause = false;
-            int items = CoverFlowControl.Items.Count()-1;
-            Debug.WriteLine("Dia");
+            int items = CoverFlowControl.Items.Count() - 1;
             for (int i = 0; i <= items; i++)
             {
                 if (pause == false)
@@ -144,7 +188,8 @@ namespace CoverFlowDemo
                     }
                 }
 
-            }   
+            }  
+
         }
 
         private void pauseDiashow(object sender, RoutedEventArgs e)
@@ -155,7 +200,7 @@ namespace CoverFlowDemo
         //Aktuelles Bild Vergrößern.
         private void zoomIn(object sender, RoutedEventArgs e)
         {
-            CoverFlowControl.SelectedCoverItem.Scale += 0.5;
+            CoverFlowControl.SelectedCoverItem.Scale += 0.1;
         }
 
         //Aktuelles Bild verkleinern, ohne über die optimale Größe zu gehen.
@@ -189,14 +234,14 @@ namespace CoverFlowDemo
         
         private void ImagePointerPressed(object sender, PointerRoutedEventArgs e)
         {
-            Debug.WriteLine("Pressed");
+            //Debug.WriteLine("Pressed");
             holding = true;
             
         }
 
         private void ImagePointerReleased(object sender, PointerRoutedEventArgs e)
         {
-            Debug.WriteLine("Released");
+            //Debug.WriteLine("Released");
             holding = false;
         }
         

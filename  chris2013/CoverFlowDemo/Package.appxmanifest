@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="5a5bc46b-e6f1-409a-9bef-c7ef31b04612" Publisher="CN=Jeff" Version="1.1.0.0" />
+  <Identity Name="PhotoApp" Publisher="CN=Bernhard Heinrich und Alexander Stoldt" Version="1.1.0.0" />
   <Properties>
     <DisplayName>PhotoApp</DisplayName>
     <PublisherDisplayName>Bernhard Heinrich und Alexander Stoldt</PublisherDisplayName>
